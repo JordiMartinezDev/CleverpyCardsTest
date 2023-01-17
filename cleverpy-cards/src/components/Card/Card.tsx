@@ -12,12 +12,11 @@ interface Props {
 
 export default function Card({ post }: Props) {
   return (
-    <div>
-      <li key={post?.id}>
-        <h4>{post?.title}</h4>
-        <p>{post?.body}</p>
-        <p>{post?.userId}</p>
-      </li>
+    <div className="card">
+      <p className="card__postId">{post?.id}</p>
+      <h4 className="card__title">{post?.title}</h4>
+      <p className="card__body">{post?.body}</p>
+      <p className="card__userId">{post?.userId}</p>
     </div>
   );
 }
