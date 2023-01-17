@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import Card from "../../components/Card/Card";
+import "./Home.css";
 
 interface Post {
   userId: number;
@@ -23,11 +24,14 @@ export default function Home() {
         setPosts(res.data);
         setDbError(false);
       })
-      .catch((e) => setDbError(true));
+      .catch((e) => {
+        setDbError(true);
+        console.log(e);
+      });
   }, []);
 
   return (
-    <div>
+    <div className="grid">
       {posts.map((post) => {
         return <Card key={post.id} post={post} />;
       })}

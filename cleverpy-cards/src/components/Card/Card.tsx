@@ -13,10 +13,13 @@ interface Props {
 export default function Card({ post }: Props) {
   return (
     <div className="card">
-      <p className="card__postId">{post?.id}</p>
-      <h4 className="card__title">{post?.title}</h4>
-      <p className="card__body">{post?.body}</p>
-      <p className="card__userId">{post?.userId}</p>
+      <div>
+        <p className="card__postId">{post?.id}</p>
+        <p className="card__title">{post?.title}</p>
+        <p className="card__body">{post?.body}</p>
+        <p className="card__userId">{post?.userId}</p>
+      </div>
+      <button className="card__delete-button">Delete</button>
     </div>
   );
 }
