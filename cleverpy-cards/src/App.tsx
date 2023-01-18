@@ -1,13 +1,33 @@
 import "./App.css";
 import Home from "./pages/Home/Home";
-import Navbar from "./components/Navbar/Navbar";
+import SideBar from "./components/SideBar/SideBar";
 import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
+import { SideBarMenuItem } from "./types";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiFillHome, AiOutlineHome } from "react-icons/ai";
+import { BiLogIn } from "react-icons/bi";
+import { GrCircleInformation } from "react-icons/gr";
 
 function App() {
+  const items: SideBarMenuItem[] = [
+    {
+      id: "1",
+      label: "Home",
+      icon: AiOutlineHome,
+      url: "/",
+    },
+    {
+      id: "2",
+      label: "Login",
+      icon: BiLogIn,
+      url: "/login",
+    },
+  ];
+
   return (
     <div className="App">
-      <Navbar />
+      <SideBar items={items} />
 
       <Routes>
         <Route path="/" element={<Home />} />

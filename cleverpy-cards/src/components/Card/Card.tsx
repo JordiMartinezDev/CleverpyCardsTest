@@ -15,7 +15,7 @@ export default function Card({ post }: Props) {
     <div className="card">
       <div>
         <p className="card__postId">{post?.id}</p>
-        <p className="card__title">{post?.title}</p>
+        <h3 className="card__title">{post?.title}</h3>
         <p className="card__body">{post?.body}</p>
         <p className="card__userId">{post?.userId}</p>
       </div>
