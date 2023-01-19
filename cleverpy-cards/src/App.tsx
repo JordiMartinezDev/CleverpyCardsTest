@@ -4,13 +4,12 @@ import SideBar from "./components/SideBar/SideBar";
 import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import { SideBarMenuItem } from "./types";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiFillHome, AiOutlineHome } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
 import { BiLogIn } from "react-icons/bi";
-import { GrCircleInformation } from "react-icons/gr";
 import Login from "./pages/Login/Login";
 
 function App() {
+  //We can add items to the sideBar easily
   const items: SideBarMenuItem[] = [
     {
       id: "1",

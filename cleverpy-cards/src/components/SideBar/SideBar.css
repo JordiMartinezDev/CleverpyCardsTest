@@ -8,8 +8,7 @@
   justify-content: space-between;
   height: 4.5vh;
   width: 100%;
-  /* width: 2vw;
-  height: 100%; */
+
   top: 0;
   position: fixed;
 
@@ -20,7 +19,7 @@
   padding: 0px 16px; /* adjust padding */
 }
 
-.menu-bars {
+.navbar__item {
   font-size: 2rem;
   background: none;
   color: white;
@@ -34,19 +33,19 @@
   letter-spacing: 2px; /* adjust letter-spacing */
   margin-right: 20%; /* push brand to left */
 }
-.menu-bars-container {
+.navbar__container {
   display: flex;
   justify-content: flex-end;
   padding-right: 2vw;
 }
 
-.menu-bars-navbar {
-  font-size: 1.5rem;
+.navbar__link {
+  font-size: 18px;
 }
 
-.nav-menu {
+.sidebar__menu {
   background-color: #1a1d1f;
-  width: 200px;
+  width: 150px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -56,7 +55,7 @@
   transition: 500ms;
 }
 
-.nav-menu.active {
+.sidebar__menu.active {
   list-style: none;
   left: 0;
   transform: 250ms;
@@ -66,12 +65,20 @@
   padding: 16px; /* adjust padding */
 }
 
-.nav-text {
+.sidebar__close {
+  color: white;
+  display: flex;
+  justify-content: end;
+  font-size: 26px;
+
+  padding-bottom: 30px;
+}
+.sidebar__text {
   display: flex;
   height: 60px;
 }
 
-.nav-text a {
+.sidebar__text a {
   text-decoration: none;
   color: white;
   font-size: 23px;
@@ -83,23 +90,16 @@
   border-radius: 4px;
 }
 
-.nav-text a:hover {
+.sidebar__text a:hover {
   background-color: #1a83ff;
   transition: 400ms;
 }
 
-.nav-menu-items {
+.sidebar__menu--items {
   list-style: none;
   width: 100%;
 }
 
-.navbar-toggle {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: start;
-}
-
 span {
-  margin-left: 16px;
+  margin-left: 15px;
 }

@@ -2,6 +2,10 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="container">This website was created by Jordi Martinez</div>
+    <footer className="footer">
+      <div className="footer__content">
+        <p>Website created by Jordi Martinez</p>
+      </div>
+    </footer>
   );
 }
