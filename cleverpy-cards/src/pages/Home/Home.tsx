@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import Card from "../../components/Card/Card";
 import "./Home.css";
+import logoImg from "../../img/PostCardsLogo.png";
 
 interface Post {
   userId: number;
@@ -48,18 +49,23 @@ export default function Home() {
   }
 
   return (
-    <div className="grid">
-      {posts.map((post) => {
-        return (
-          <Card
-            key={post.id}
-            post={post}
-            handleDelete={handleDeletePost}
-            handleEdit={handleEditPost}
-          />
-        );
-      })}
-      {dbError ? <h3>Database connection failed, please try again</h3> : null}
+    <div>
+      <div className="homeLayout">
+        <img className="logo" src={logoImg}></img>
+      </div>
+      <div className="grid">
+        {posts.map((post) => {
+          return (
+            <Card
+              key={post.id}
+              post={post}
+              handleDelete={handleDeletePost}
+              handleEdit={handleEditPost}
+            />
+          );
+        })}
+        {dbError ? <h3>Database connection failed, please try again</h3> : null}
+      </div>
     </div>
   );
 }

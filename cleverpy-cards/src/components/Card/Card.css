@@ -19,10 +19,20 @@
 
 .card__postId {
   text-align: center;
+  color: black;
+  background-color: white;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 8px;
+
+  border-radius: 10px;
+
+  font-size: 12px;
+  color: #999;
 }
 .card__title {
   text-transform: uppercase;
-  background-color: rgb(175, 179, 175);
+  color: white;
   height: 4rem;
   margin: 0.5rem;
   text-align: center;
@@ -31,30 +41,78 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
+
+  color: #333;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .card__body {
   margin: 0.5rem;
   height: 165px;
-  text-align: left;
+  text-align: center;
+  color: #333;
 }
 .card__userId {
   text-align: end;
-  margin-right: 15px;
+
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 8px;
+  margin-right: 8px;
 }
 
 .card__buttons {
   display: flex;
   justify-content: space-around;
+  border-radius: 5px;
+  font-size: 16px;
 }
 .card__buttons--edit {
+  background-color: #1da1f2;
   width: 100px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+.card__buttons--edit:hover {
+  background-color: #2980b9;
 }
 .card__buttons--delete {
   width: 100px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.card__delete-button:hover {
+.card__buttons--delete:hover {
   transition-duration: 300ms;
-  background-color: rgb(238, 36, 36);
+  background-color: #c0392b;
+}
+
+.card__title__editing {
+  margin-left: 8px;
+  width: 210px;
+  height: 70px;
+}
+
+.card__body__editing {
+  margin-left: 8px;
+  width: 210px;
+  height: 165px;
 }

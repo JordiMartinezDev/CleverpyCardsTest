@@ -20,10 +20,7 @@ export default function Card({ post, handleDelete, handleEdit }: Props) {
   function handleDeleteCard() {
     handleDelete(post);
   }
-  // userId: number;
-  // id: number;
-  // title: string;
-  // body: string;
+
   function onChangeBody(e: React.ChangeEvent<HTMLTextAreaElement>) {
     setCurrentPost({
       userId: currentPost.userId,
@@ -43,6 +40,7 @@ export default function Card({ post, handleDelete, handleEdit }: Props) {
 
   function handleEditPostCard() {
     setIsInEditMode(!isInEditMode);
+    console.log("SENDING POST TO HOME:.....:", currentPost);
     if (isInEditMode) handleEdit(currentPost);
   }
   return (
@@ -53,9 +51,10 @@ export default function Card({ post, handleDelete, handleEdit }: Props) {
           <h3 className="card__title">{post?.title}</h3>
         ) : (
           <textarea
+            className="card__title__editing"
             defaultValue={post?.title}
             name="title"
-            style={{ margin: "8px" }}
+            style={{}}
             onChange={(e) => onChangeTitle(e)}
           />
         )}
@@ -63,7 +62,7 @@ export default function Card({ post, handleDelete, handleEdit }: Props) {
           <p className="card__body">{post?.body}</p>
         ) : (
           <textarea
-            className="card__body"
+            className="card__body__editing"
             defaultValue={post?.body}
             onChange={(e) => onChangeBody(e)}
           />
