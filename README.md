@@ -1,13 +1,13 @@
 # CleverpyCardsTest
 Final test for the hiring process of Cleverpy
 
-There are 2 ways of testing this app. 
+There are 2 ways to test this app. 
 
 Running the following commands:
 npm install
 npm start
 
-Or you can check the deployment:
+You can also check the deployment:
 
 Link: 
 
