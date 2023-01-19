@@ -12,6 +12,12 @@
   height: 100%; */
   top: 0;
   position: fixed;
+
+  background-color: #34495e; /* change background color */
+  color: #fff; /* change text color */
+  display: flex; /* enable flexbox */
+  align-items: center; /* center items vertically */
+  padding: 0px 16px; /* adjust padding */
 }
 
 .menu-bars {
@@ -21,6 +27,12 @@
   list-style: none;
   text-decoration: none;
   justify-content: space-around;
+
+  font-size: 24px; /* adjust font-size */
+  font-weight: bold; /* add boldness */
+  text-transform: uppercase; /* change text to uppercase */
+  letter-spacing: 2px; /* adjust letter-spacing */
+  margin-right: 20%; /* push brand to left */
 }
 .menu-bars-container {
   display: flex;
@@ -48,6 +60,10 @@
   list-style: none;
   left: 0;
   transform: 250ms;
+  background-color: #2c3e50; /* change background color */
+  color: #fff; /* change text color */
+  display: flex; /* enable flexbox */
+  padding: 16px; /* adjust padding */
 }
 
 .nav-text {

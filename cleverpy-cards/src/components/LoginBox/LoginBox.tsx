@@ -68,7 +68,7 @@ export default function LoginBox() {
     //     </button>
     //   </form>
     // </div>
-    <div>
+    <div className="loginBox">
       <h3>Login</h3>
       <form onSubmit={(e) => handleLoginSubmit(e)}>
         <div className="form-field">
