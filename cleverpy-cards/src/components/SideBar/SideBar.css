@@ -33,6 +33,7 @@
   letter-spacing: 2px; /* adjust letter-spacing */
   margin-right: 20%; /* push brand to left */
 }
+
 .navbar__container {
   display: flex;
   justify-content: flex-end;
