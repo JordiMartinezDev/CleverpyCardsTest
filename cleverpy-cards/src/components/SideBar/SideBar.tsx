@@ -20,9 +20,20 @@ export default function SideBar({ items }: SideBarMenuProps) {
   return (
     <>
       <div className="navbar">
-        <Link to="#" className="menu-bars">
+        <Link to="#" className="menu-bars hamburguer">
           <GiHamburgerMenu onClick={handleSideBarStatus} />
         </Link>
+        <div className="menu-bars-container">
+          {items.map((item) => {
+            return (
+              <li key={item.id} className="menu-bars menu-bars-navbar">
+                <Link to={item.url} className="menu-bars menu-bars-navbar">
+                  <span>{item.label}</span>
+                </Link>
+              </li>
+            );
+          })}
+        </div>
       </div>
       <nav className={isOpen ? "nav-menu active" : "nav-menu"}>
         <ul className="nav-menu-items" onClick={handleSideBarStatus}>
@@ -33,13 +44,11 @@ export default function SideBar({ items }: SideBarMenuProps) {
           </div>
           {items.map((item) => {
             return (
-              <li>
-                <li key={item.id} className="nav-text">
-                  <Link to={item.url}>
-                    <item.icon />
-                    <span>{item.label}</span>
-                  </Link>
-                </li>
+              <li key={item.id} className="nav-text">
+                <Link to={item.url}>
+                  <item.icon />
+                  <span>{item.label}</span>
+                </Link>
               </li>
             );
           })}

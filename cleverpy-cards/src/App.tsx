@@ -8,6 +8,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiFillHome, AiOutlineHome } from "react-icons/ai";
 import { BiLogIn } from "react-icons/bi";
 import { GrCircleInformation } from "react-icons/gr";
+import Login from "./pages/Login/Login";
 
 function App() {
   const items: SideBarMenuItem[] = [
@@ -31,7 +32,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/filterByCategory/:category" element={<FilterByCategoryPage></FilterByCategoryPage>}/> */}
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<h2> Page not found</h2>} />
       </Routes>
       <Footer />

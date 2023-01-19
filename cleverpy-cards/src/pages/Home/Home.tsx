@@ -30,10 +30,34 @@ export default function Home() {
       });
   }, []);
 
+  function handleDeletePost(postDelete: Post) {
+    const newPosts = posts.filter(function (post) {
+      if (post != postDelete) return post;
+    });
+    setPosts(newPosts);
+    console.log("trying to delete:", postDelete);
+  }
+
+  function handleEditPost(postEdit: Post) {
+    console.log("TRYTIUN TO ¿SAVE THIS POST: ", postEdit);
+    const editedPost = posts.map(function (post) {
+      if (post.id == postEdit.id) return (post = postEdit);
+      else return post;
+    });
+    setPosts(editedPost);
+  }
+
   return (
     <div className="grid">
       {posts.map((post) => {
-        return <Card key={post.id} post={post} />;
+        return (
+          <Card
+            key={post.id}
+            post={post}
+            handleDelete={handleDeletePost}
+            handleEdit={handleEditPost}
+          />
+        );
       })}
       {dbError ? <h3>Database connection failed, please try again</h3> : null}
     </div>
