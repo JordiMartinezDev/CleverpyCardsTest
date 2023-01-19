@@ -48,9 +48,9 @@ export default function Card({ post, handleDelete, handleEdit }: Props) {
   return (
     <div className="card">
       <div>
-        <p className="card__postId"> Post id: {post?.id}</p>
+        <div className="card__title"> Post id: {post?.id}</div>
         {!isInEditMode ? (
-          <h3 className="card__title">{post?.title}</h3>
+          <h3>{post?.title}</h3>
         ) : (
           <textarea
             defaultValue={post?.title}
