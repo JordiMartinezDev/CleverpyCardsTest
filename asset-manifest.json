@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "//jordimartinezdev.github.io/CleverpyCardsTest/static/css/main.36ee64b6.css",
-    "main.js": "//jordimartinezdev.github.io/CleverpyCardsTest/static/js/main.9ac85e87.js",
-    "static/js/787.366188d3.chunk.js": "//jordimartinezdev.github.io/CleverpyCardsTest/static/js/787.366188d3.chunk.js",
-    "index.html": "//jordimartinezdev.github.io/CleverpyCardsTest/index.html",
-    "main.36ee64b6.css.map": "//jordimartinezdev.github.io/CleverpyCardsTest/static/css/main.36ee64b6.css.map",
-    "main.9ac85e87.js.map": "//jordimartinezdev.github.io/CleverpyCardsTest/static/js/main.9ac85e87.js.map",
-    "787.366188d3.chunk.js.map": "//jordimartinezdev.github.io/CleverpyCardsTest/static/js/787.366188d3.chunk.js.map"
+    "main.css": "/CleverpyCardsTest/static/css/main.36ee64b6.css",
+    "main.js": "/CleverpyCardsTest/static/js/main.1f142f37.js",
+    "static/js/787.366188d3.chunk.js": "/CleverpyCardsTest/static/js/787.366188d3.chunk.js",
+    "index.html": "/CleverpyCardsTest/index.html",
+    "main.36ee64b6.css.map": "/CleverpyCardsTest/static/css/main.36ee64b6.css.map",
+    "main.1f142f37.js.map": "/CleverpyCardsTest/static/js/main.1f142f37.js.map",
+    "787.366188d3.chunk.js.map": "/CleverpyCardsTest/static/js/787.366188d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.36ee64b6.css",
-    "static/js/main.9ac85e87.js"
+    "static/js/main.1f142f37.js"
   ]
 }
